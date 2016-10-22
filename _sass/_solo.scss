@@ -1,12 +1,14 @@
-@import url(//fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Montserrat:700);
 
 html {
-  font: 16px/1.5 Inconsolata, sans-serif;
+  font: 14px/1.7 'Source Code Pro', monospace;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 40rem) {
   html {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -15,19 +17,19 @@ body {
   color: #333;
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 40rem) {
   body {
     margin-top: 5rem;
   }
 }
 
 a {
-  color: #0074d9; /* From http://clrs.cc */
+  color: #3399cc;
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  text-decoration: underline;
+  color: #297aa3;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,14 +41,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 40rem) {
   h1 {
-    font-size: 3rem;
-    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -55,22 +57,22 @@ h1 a {
 }
 
 h2 {
+  font-size: 1.75rem;
   margin-top: 2rem;
-  font-size: 1.25rem;
   margin-bottom: 0.75rem;
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 40rem) {
   h2 {
+    font-size: 1.75rem;
     margin-top: 2.5rem;
-    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
 }
 
 h3, h4, h5, h6 {
-  margin-top: 1.5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin-top: 1.75rem;
   text-transform: uppercase;
 }
 
@@ -81,6 +83,7 @@ p, ul, ol, dl, table, pre, blockquote {
 
 ul, ol {
   padding-left: 1.5rem;
+  list-style: square;
 }
 
 dd {
@@ -129,12 +132,16 @@ td, th {
 
 pre, code {
   font-family: inherit;
-  background-color: #eee;
+  background-color: #f7f7f7;
 }
 
 pre {
-  padding: .5rem 1rem;
-  font-size: 0.8rem;
+  padding: .75rem 1rem;
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+  overflow-x: auto;
+  word-wrap: normal;
+  white-space: pre;
 }
 
 code {
@@ -145,8 +152,23 @@ pre > code {
   padding: 0;
 }
 
+kbd {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  padding: 1px 8px;
+  font-size: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #333;
+  text-shadow: #fff 0 1px 0;
+  background: #f4f3f1;
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.2),
+    0 1px 0 0 #fff inset;
+}
+
 .container {
-  max-width: 30rem;
+  max-width: 40rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
