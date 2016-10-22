@@ -1,5 +1,10 @@
-# Solo 
+# Solo
 
-[Solo](http://chibicode.github.io/solo) is a Jekyll theme that supports **single-page websites** only, but supports them well. Yes, it's responsive.
+This is a fork of [Solo](https://github.com/chibicode/solo).
 
-### [Demo & Documentation &rarr;](http://chibicode.github.io/solo)
+There are a few changes and improvements over the original:
+
+- Source Code Pro font instead of Inconsolata
+- Bigger containter and smaller font
+- GitHub syntax highlighting theme
+- AnchorJS for anchor link creation
