@@ -23,13 +23,15 @@ body {
   }
 }
 
-a {
+a, a:visited {
   color: #3399cc;
   text-decoration: none;
+  transition: color ease 0.7s;
+  -webkit-transition: color ease 0.7s;
 }
 
 a:hover, a:focus {
-  color: #297aa3;
+  color: #27769d;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 3.5rem;
   margin-bottom: 2rem;
-  a:hover, a:focus {
+  a, a:hover, a:focus, a:visited {
     color: #111;
   }
 }
