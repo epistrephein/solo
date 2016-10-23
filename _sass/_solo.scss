@@ -133,6 +133,11 @@ td, th {
   border: 1px solid #ccc;
 }
 
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}
+
 pre, code {
   font-family: inherit;
   background-color: #f7f7f7;
@@ -160,6 +165,7 @@ kbd {
   margin-bottom: 0.4rem;
   padding: 1px 8px;
   font-size: 0.75rem;
+  font-weight: bold;
   border: 1px solid #ccc;
   border-radius: 3px;
   color: #333;
